@@ -1,3 +1,4 @@
+# This is not useful, because we already have .vim/vimrc
 echo 'set runtimepath+=~/.vim/vimrcs
 
 source ~/.vim/vimrcs/basic.vim
