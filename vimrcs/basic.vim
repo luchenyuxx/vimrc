@@ -151,13 +151,20 @@ syntax enable
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
+if $TERM == "xterm-256color"
+    set t_Co=256
+endif
 
-try
-    colorscheme desert
-catch
-endtry
+"try
+"    colorscheme solarized
+"catch
+"endtry
 
-set background=dark
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
 
 " Set extra options when running in GUI mode
 if has("gui_running")
