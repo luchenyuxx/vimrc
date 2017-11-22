@@ -63,6 +63,10 @@ let g:syntastic_check_on_wq = 0
 " autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 " let g:ycm_semantic_triggers = {'haskell' : ['.']} "enable neco-ghc for YouCompleteMe
 " let g:necoghc_enable_detailed_browse = 1
+" let g:haskellmode_completion_ghc = 0
+" autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+" let g:ycm_semantic_triggers = {'haskell' : ['re!\w']} "enable neco-ghc for YouCompleteMe
+" let g:necoghc_enable_detailed_browse = 1
 
 """"""""""" ctrlp """""""""""""""
 " map <silent> <Leader><space> :CtrlP()<CR>
