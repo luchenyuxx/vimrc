@@ -1,5 +1,6 @@
-" Disable scrollbars (real hackers don't use scrollbars for navigation!)
-set guioptions-=r
-set guioptions-=R
-set guioptions-=l
-set guioptions-=L
+" Highlight current row and column
+"set cursorline
+"set cursorcolumn
+
+" enable mouse in terminal
+" set mouse=a
