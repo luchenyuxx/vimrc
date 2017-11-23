@@ -21,22 +21,23 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bc :Bclose<cr>:tabclose<cr>gT
+noremap <leader>bc :Bclose<cr>:tabclose<cr>gT
 
 " Close all the buffers
-map <leader>ba :bufdo bd<cr>
+noremap <leader>ba :bufdo bd<cr>
 
 " Previous buffer, next buffer
-map <leader>bl :bnext<cr>
-map <leader>bh :bprevious<cr>
+noremap <leader>bl :bnext<cr>
+noremap <leader>bh :bprevious<cr>
 
 " Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove<cr> 
-map <leader>tl :tabnext<cr> 
-map <leader>th :tabprevious<cr> 
+noremap <leader>tn :tabnew<cr>
+" Close all other tabs
+noremap <leader>to :tabonly<cr>
+noremap <leader>tc :tabclose<cr>
+" noremap <leader>tm :tabmove<cr> 
+noremap <leader>tl :tabnext<cr> 
+noremap <leader>th :tabp<CR> 
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
@@ -55,17 +56,12 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac (not working)
-" nmap <M-j> mz:m+<cr>`z
-" nmap <M-k> mz:m-2<cr>`z
-" vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-" vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
-" if has("mac") || has("macunix")
-"   nmap <D-j> <M-j>
-"   nmap <D-k> <M-k>
-"   vmap <D-j> <M-j>
-"   vmap <D-k> <M-k>
-" endif
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+inoremap <C-j> <Esc>:m .+1<CR>==gi
+inoremap <C-k> <Esc>:m .-2<CR>==gi
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking

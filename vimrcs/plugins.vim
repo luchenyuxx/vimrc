@@ -1,3 +1,8 @@
+" =======================================================
+" This file contains the essential plugins which you can't 
+" miss.
+" =======================================================
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
@@ -84,7 +89,7 @@ let g:syntastic_check_on_wq = 0
 
 """"""""""" ctrlp """""""""""""""
 " map <silent> <Leader><space> :CtrlP()<CR>
-map <C-p> :CtrlP()<CR>
+noremap <C-p> :CtrlP()<CR>
 " noremap <leader>b<space> :CtrlPBuffer<cr>
 let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
