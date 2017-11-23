@@ -81,6 +81,20 @@ if (&t_Co == 256)
     colorscheme peaksea
 endif
 
+"=============== lightline ==========="
+let g:lightline = {
+            \ 'component_function':{
+            \   'filename': 'LightLineFilename'
+            \ }
+            \ }
+
+function! LightLineFilename()
+    " Relative path
+    " return expand('%')
+    " Absolute path
+    return expand('%:p')
+endfunction
+
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
 " nnoremap <silent> <leader>hh :Hoogle<CR>
