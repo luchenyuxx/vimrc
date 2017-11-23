@@ -1,6 +1,9 @@
 " set user path
 " let $PATH = $PATH . ':' . expand('~/.local/bin')
 
+" Not compatible with vi
+set nocompatible
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on

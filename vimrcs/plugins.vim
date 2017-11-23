@@ -27,6 +27,10 @@ Plug 'godlygeek/tabular'
 " Peaksea color scheme
 Plug 'vim-scripts/peaksea'
 
+" A personal wiki, a number of linked text files that have their own 
+" syntax highlighting
+Plug 'vimwiki/vimwiki'
+
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
 " Search tool (need to work with ack)
