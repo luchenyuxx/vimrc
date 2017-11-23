@@ -99,6 +99,9 @@ function! LightLineFilename()
     return expand('%:p')
 endfunction
 
+"================ vimwiki ============"
+let g:vimwiki_list = [{'path':'~/Sync/vimwiki'}]
+
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
 " nnoremap <silent> <leader>hh :Hoogle<CR>
