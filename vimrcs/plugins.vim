@@ -24,6 +24,20 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ervandew/supertab'
 " Git wrapper
 " Plug 'tpope/vim-fugitive'
+" A light and configurable statusline/tabline plugin
+Plug 'itchyny/lightline.vim'
+
+" Mappings to easily delete, change and add surroundings in pairs
+Plug 'tpope/vim-surround'
+
+" Tex filtering and alignment
+Plug 'godlygeek/tabular'
+
+" Search tool (need to work with ack)
+" Plug 'mileszs/ack.vim'
+
+" Peaksea color scheme
+Plug 'vim-scripts/peaksea'
 
 " Initialize plugin system
 call plug#end()
@@ -99,3 +113,5 @@ let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
 """"""""""" supertab """"""""""""""""""'
 " let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+"=========== lightline =========="
+" 
