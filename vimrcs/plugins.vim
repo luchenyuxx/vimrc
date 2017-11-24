@@ -89,7 +89,7 @@ endif
 let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepath', 'modified']]}}
 
 "================ vimwiki ============"
-let g:vimwiki_list = [{'path':'~/Sync/vimwiki'}]
+let g:vimwiki_list = [{'path':'~/Sync/vimwiki', 'syntax': 'markdown',  'ext':'.md'}]
 
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
