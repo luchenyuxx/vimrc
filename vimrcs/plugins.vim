@@ -86,18 +86,7 @@ if (&t_Co == 256)
 endif
 
 "=============== lightline ==========="
-let g:lightline = {
-            \ 'component_function':{
-            \   'filename': 'LightLineFilename'
-            \ }
-            \ }
-
-function! LightLineFilename()
-    " Relative path
-    " return expand('%')
-    " Absolute path
-    return expand('%:p')
-endfunction
+let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepath', 'modified']]}}
 
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
