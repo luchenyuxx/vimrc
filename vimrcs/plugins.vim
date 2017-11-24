@@ -88,6 +88,9 @@ endif
 "=============== lightline ==========="
 let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepath', 'modified']]}}
 
+"================ vimwiki ============"
+let g:vimwiki_list = [{'path':'~/Sync/vimwiki'}]
+
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
 " nnoremap <silent> <leader>hh :Hoogle<CR>
