@@ -90,6 +90,7 @@ let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepa
 
 "================ vimwiki ============"
 let g:vimwiki_list = [{'path':'~/Sync/vimwiki'}]
+let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'java': 'java', 'scala': 'scala'}
 
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
