@@ -31,6 +31,9 @@ Plug 'vim-scripts/peaksea'
 " syntax highlighting
 Plug 'vimwiki/vimwiki'
 
+" Haskell syntax and indentation
+Plug 'neovimhaskell/haskell-vim'
+
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
 " Search tool (need to work with ack)
