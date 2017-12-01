@@ -79,7 +79,7 @@ let g:syntastic_check_on_wq = 0
 
 """"""""""" ctrlp """""""""""""""
 " map <silent> <Leader><space> :CtrlP()<CR>
-noremap <C-p> :CtrlP()<CR>
+" noremap <C-R> :CtrlP()<CR>
 " noremap <leader>b<space> :CtrlPBuffer<cr>
 let g:ctrlp_custom_ignore = '\v[\/]dist$'
 
