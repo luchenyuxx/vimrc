@@ -34,6 +34,9 @@ Plug 'vimwiki/vimwiki'
 " Haskell syntax and indentation
 Plug 'neovimhaskell/haskell-vim'
 
+" Git wrapper
+Plug 'tpope/vim-fugitive'
+
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
 " Search tool (need to work with ack)
@@ -47,8 +50,6 @@ Plug 'neovimhaskell/haskell-vim'
 " Plug 'https://github.com/altercation/vim-colors-solarized.git'
 " For insert completion
 " Plug 'ervandew/supertab'
-" Git wrapper
-" Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
@@ -90,6 +91,7 @@ endif
 
 "=============== lightline ==========="
 let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepath', 'modified']]}}
+" let g:lightline = {'active':{'left':[['mode', 'paste'], ['gitbranch', 'readonly', 'relativepath', 'modified']]}, 'component_function':{'gitbranch':'fugitive#head'}}
 
 "================ vimwiki ============"
 let wiki = {}
