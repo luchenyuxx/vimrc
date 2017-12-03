@@ -95,9 +95,13 @@ let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepa
 
 "================ vimwiki ============"
 let wiki = {}
+" Enable syntax for code blocks
 let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'java': 'java', 'scala': 'scala'}
+" The default path of vim wiki
 let wiki.path = '~/Sync/vimwiki'
 let g:vimwiki_list = [wiki]
+" Enable fold for vimwiki
+let g:vimwiki_folding = 'expr'
 
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
