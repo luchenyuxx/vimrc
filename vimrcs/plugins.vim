@@ -37,6 +37,9 @@ Plug 'neovimhaskell/haskell-vim'
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 
+" Multiple selections for Vim
+Plug 'terryma/vim-multiple-cursors'
+
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
 " Search tool (need to work with ack)
