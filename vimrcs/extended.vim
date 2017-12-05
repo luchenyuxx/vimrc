@@ -6,4 +6,4 @@
 "set cursorcolumn
 
 " enable mouse in terminal
-" set mouse=a
+set mouse=a
