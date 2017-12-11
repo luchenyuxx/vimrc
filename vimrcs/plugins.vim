@@ -37,8 +37,8 @@ Plug 'neovimhaskell/haskell-vim'
 " Git wrapper
 Plug 'tpope/vim-fugitive'
 
-" Multiple selections for Vim
-Plug 'terryma/vim-multiple-cursors'
+" Multiple selections for Vim (You don't need this, Google 'you don't need more than one cursor
+" Plug 'terryma/vim-multiple-cursors'
 
 " Python indent
 Plug 'Vimjas/vim-python-pep8-indent'
