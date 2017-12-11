@@ -1,5 +1,5 @@
 " =======================================================
-" This file contains the essential plugins which you can't 
+" This file contains the essential plugins which you can't
 " miss.
 " =======================================================
 
@@ -27,7 +27,7 @@ Plug 'godlygeek/tabular'
 " Peaksea color scheme
 Plug 'vim-scripts/peaksea'
 
-" A personal wiki, a number of linked text files that have their own 
+" A personal wiki, a number of linked text files that have their own
 " syntax highlighting
 Plug 'vimwiki/vimwiki'
 
@@ -39,6 +39,12 @@ Plug 'tpope/vim-fugitive'
 
 " Multiple selections for Vim
 Plug 'terryma/vim-multiple-cursors'
+
+" Python indent
+Plug 'Vimjas/vim-python-pep8-indent'
+
+" Better white space
+Plug 'ntpeters/vim-better-whitespace'
 
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
@@ -110,11 +116,11 @@ let g:vimwiki_folding = 'expr'
 " Hoogle the word under the cursor
 " nnoremap <silent> <leader>hh :Hoogle<CR>
 " Hoogle and prompt for input
-" nnoremap <leader>hH :Hoogle 
+" nnoremap <leader>hH :Hoogle
 " Hoogle for detailed documentation (e.g. "Functor")
 " nnoremap <silent> <leader>hi :HoogleInfo<CR>
 " Hoogle for detailed documentation and prompt for input
-" nnoremap <leader>hI :HoogleInfo 
+" nnoremap <leader>hI :HoogleInfo
 " Hoogle, close the Hoogle window
 " nnoremap <silent> <leader>hz :HoogleClose<CR>
 
@@ -132,7 +138,7 @@ let g:vimwiki_folding = 'expr'
 """"""""""" supertab """"""""""""""""""'
 " let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 "=========== lightline =========="
-" 
+"
 """"""""""" ghc-mod """"""""""""""
 " map <silent> <Leader>hT :GhcModTypeInsert<CR>
 " map <silent> <Leader>hS :GhcModSplitFunCase<CR>
