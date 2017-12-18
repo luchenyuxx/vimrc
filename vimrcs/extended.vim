@@ -9,5 +9,5 @@
 set mouse=a
 
 " Enable folding
-set foldmethod=indent
+" set foldmethod=indent
 " set foldlevel=1

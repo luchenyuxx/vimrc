@@ -46,10 +46,11 @@ Plug 'Vimjas/vim-python-pep8-indent'
 " Better white space
 Plug 'ntpeters/vim-better-whitespace'
 
+" Search tool integration(need to work with ack or ag)
+Plug 'mileszs/ack.vim'
+"
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
-" Search tool (need to work with ack)
-" Plug 'mileszs/ack.vim'
 " Fast, as-you-type, fuzzy-search code completion engine
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
@@ -111,6 +112,11 @@ let wiki.path = '~/Sync/vimwiki'
 let g:vimwiki_list = [wiki]
 " Enable fold for vimwiki
 let g:vimwiki_folding = 'expr'
+
+"=================ack=================="
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
