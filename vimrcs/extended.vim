@@ -11,3 +11,7 @@ set mouse=a
 " Enable folding
 " set foldmethod=indent
 " set foldlevel=1
+
+" Excluding version control directories
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*        " Linux/MacOSX
+

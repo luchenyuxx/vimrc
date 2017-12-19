@@ -93,6 +93,7 @@ let g:syntastic_check_on_wq = 0
 " noremap <C-R> :CtrlP()<CR>
 " noremap <leader>b<space> :CtrlPBuffer<cr>
 let g:ctrlp_custom_ignore = '\v[\/]dist$'
+let g:ctrlp_show_hidden = 1
 
 "============= peaksea ============="
 if (&t_Co == 256)
