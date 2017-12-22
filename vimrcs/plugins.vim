@@ -48,7 +48,10 @@ Plug 'ntpeters/vim-better-whitespace'
 
 " Search tool integration(need to work with ack or ag)
 Plug 'mileszs/ack.vim'
-"
+
+" Javascript indentation and highlighting
+Plug 'pangloss/vim-javascript'
+
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
 " Fast, as-you-type, fuzzy-search code completion engine
