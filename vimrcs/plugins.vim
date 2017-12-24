@@ -52,6 +52,9 @@ Plug 'mileszs/ack.vim'
 " Javascript indentation and highlighting
 Plug 'pangloss/vim-javascript'
 
+" Json syntax
+Plug 'elzr/vim-json'
+
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
 " Fast, as-you-type, fuzzy-search code completion engine

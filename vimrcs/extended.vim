@@ -12,6 +12,5 @@ set mouse=a
 " set foldmethod=indent
 " set foldlevel=1
 
-" Excluding version control directories
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*        " Linux/MacOSX
-
+" set color mode 256
+set t_Co=256
