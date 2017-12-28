@@ -9,8 +9,12 @@
 set mouse=a
 
 " Enable folding
-" set foldmethod=indent
-" set foldlevel=1
+set foldmethod=indent
+" don't fold when open file
+set foldlevel=99
 
 " set color mode 256
 set t_Co=256
+
+" set textwidth to 80
+set textwidth=80
