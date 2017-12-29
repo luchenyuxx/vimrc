@@ -120,6 +120,16 @@ let g:vimwiki_list = [wiki]
 " Enable fold for vimwiki
 let g:vimwiki_folding = 'expr'
 
+" set header color
+if has("gui_macvim")
+  hi VimwikiHeader1 guifg=#FF0000
+  hi VimwikiHeader2 guifg=#00FF00
+  hi VimwikiHeader3 guifg=#0000FF
+  hi VimwikiHeader4 guifg=#FF00FF
+  hi VimwikiHeader5 guifg=#00FFFF
+  hi VimwikiHeader6 guifg=#FFFF00
+endif
+
 "=================ack=================="
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
