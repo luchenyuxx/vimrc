@@ -102,9 +102,9 @@ let g:ctrlp_custom_ignore = '\v[\/]dist$'
 let g:ctrlp_show_hidden = 1
 
 "============= peaksea ============="
-if (&t_Co == 256)
-    colorscheme peaksea
-endif
+"if (&t_Co == 256)
+"    colorscheme peaksea
+"endif
 
 "=============== lightline ==========="
 let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepath', 'modified']]}}
