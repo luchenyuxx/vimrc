@@ -113,7 +113,7 @@ let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepa
 "================ vimwiki ============"
 let wiki = {}
 " Enable syntax for code blocks
-let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'java': 'java', 'scala': 'scala'}
+let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'java': 'java', 'scala': 'scala', 'haskell': 'haskell'}
 " The default path of vim wiki
 let wiki.path = '~/Sync/vimwiki'
 let g:vimwiki_list = [wiki]
