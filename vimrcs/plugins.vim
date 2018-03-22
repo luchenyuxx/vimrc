@@ -65,7 +65,7 @@ Plug 'elzr/vim-json'
 " Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 " Plug 'https://github.com/altercation/vim-colors-solarized.git'
 " For insert completion
-" Plug 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 " Initialize plugin system
 call plug#end()
