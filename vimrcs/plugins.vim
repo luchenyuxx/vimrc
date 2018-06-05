@@ -13,7 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-syntastic/syntastic'
 
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 
 " A light and configurable statusline/tabline plugin
 Plug 'itchyny/lightline.vim'
@@ -46,14 +46,18 @@ Plug 'Vimjas/vim-python-pep8-indent'
 " Better white space
 Plug 'ntpeters/vim-better-whitespace'
 
-" Search tool integration(need to work with ack or ag)
-Plug 'mileszs/ack.vim'
-
 " Javascript indentation and highlighting
 Plug 'pangloss/vim-javascript'
 
 " Json syntax
 Plug 'elzr/vim-json'
+
+" Scala syntax
+Plug 'derekwyatt/vim-scala'
+
+" Fuzzy finder
+Plug 'junegunn/fzf', {'do':'./install --bin'}
+Plug 'junegunn/fzf.vim'
 
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
@@ -98,13 +102,13 @@ let g:syntastic_check_on_wq = 0
 " map <silent> <Leader><space> :CtrlP()<CR>
 " noremap <C-R> :CtrlP()<CR>
 " noremap <leader>b<space> :CtrlPBuffer<cr>
-let g:ctrlp_custom_ignore = '\v[\/]dist$'
-let g:ctrlp_show_hidden = 1
+" let g:ctrlp_custom_ignore = '\v[\/]dist$'
+" let g:ctrlp_show_hidden = 1
 
 "============= peaksea ============="
-"if (&t_Co == 256)
-"    colorscheme peaksea
-"endif
+if (&t_Co == 256)
+  colorscheme peaksea
+endif
 
 "=============== lightline ==========="
 let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepath', 'modified']]}}
@@ -130,10 +134,9 @@ if has("gui_macvim")
   hi VimwikiHeader6 guifg=#FFFF00
 endif
 
-"=================ack=================="
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
+"================fzf===================="
+nnoremap <C-R> :FZF<CR>
+nnoremap <C-B> :Buffers<CR>
 
 """"""""""" Hoogle """"""""""""""""
 " Hoogle the word under the cursor
