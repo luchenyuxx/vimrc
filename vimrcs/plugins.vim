@@ -12,6 +12,9 @@ Plug 'scrooloose/nerdtree'
 " Syntax checking plugin
 Plug 'vim-syntastic/syntastic'
 
+" Purescript syntax
+Plug 'purescript-contrib/purescript-vim'
+
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 " Plug 'ctrlpvim/ctrlp.vim'
 
@@ -35,7 +38,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'neovimhaskell/haskell-vim'
 
 " Git wrapper
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 
 " Multiple selections for Vim (You don't need this, Google 'you don't need more than one cursor
 " Plug 'terryma/vim-multiple-cursors'
@@ -65,11 +68,13 @@ Plug 'junegunn/fzf.vim'
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 " Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 " Plug 'Twinside/vim-hoogle', {'for': 'haskell'}
-" Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 " Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 " Plug 'https://github.com/altercation/vim-colors-solarized.git'
 " For insert completion
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
+
+" Vim integration of ripgrep
+Plug 'jremmen/vim-ripgrep'
 
 " Initialize plugin system
 call plug#end()
@@ -135,7 +140,7 @@ if has("gui_macvim")
 endif
 
 "================fzf===================="
-nnoremap <C-R> :FZF<CR>
+nnoremap <C-F> :FZF<CR>
 nnoremap <C-B> :Buffers<CR>
 
 """"""""""" Hoogle """"""""""""""""
