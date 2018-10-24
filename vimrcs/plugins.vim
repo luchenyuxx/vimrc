@@ -62,6 +62,9 @@ Plug 'derekwyatt/vim-scala'
 Plug 'junegunn/fzf', {'do':'./install --bin'}
 Plug 'junegunn/fzf.vim'
 
+" CQL syntax
+Plug 'elubow/cql-vim'
+
 " Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'eagletmt/neco-ghc',{'for': 'haskell'}
 " Fast, as-you-type, fuzzy-search code completion engine

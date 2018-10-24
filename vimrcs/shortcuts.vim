@@ -35,9 +35,9 @@ nnoremap <leader>tn :tabnew<cr>
 " Close all other tabs
 nnoremap <leader>to :tabonly<cr>
 nnoremap <leader>tc :tabclose<cr>
-" noremap <leader>tm :tabmove<cr> 
-nnoremap <leader>tl :tabnext<cr> 
-nnoremap <leader>th :tabp<CR> 
+" noremap <leader>tm :tabmove<cr>
+nnoremap <leader>tl :tabnext<cr>
+nnoremap <leader>th :tabp<CR>
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
