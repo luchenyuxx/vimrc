@@ -74,7 +74,7 @@ Plug 'elubow/cql-vim'
 " Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 " Plug 'https://github.com/altercation/vim-colors-solarized.git'
 " For insert completion
-" Plug 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 " Vim integration of ripgrep
 Plug 'jremmen/vim-ripgrep'
