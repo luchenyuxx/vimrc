@@ -17,4 +17,4 @@ set foldlevel=99
 set t_Co=256
 
 " set textwidth to 80
-set textwidth=80
+" set textwidth=80
