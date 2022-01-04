@@ -16,7 +16,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'purescript-contrib/purescript-vim'
 
 " Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " A light and configurable statusline/tabline plugin
 Plug 'itchyny/lightline.vim'
@@ -32,7 +32,7 @@ Plug 'vim-scripts/peaksea'
 
 " A personal wiki, a number of linked text files that have their own
 " syntax highlighting
-Plug 'vimwiki/vimwiki'
+" Plug 'vimwiki/vimwiki'
 
 " Haskell syntax and indentation
 Plug 'neovimhaskell/haskell-vim'
@@ -110,13 +110,13 @@ let g:syntastic_check_on_wq = 0
 " map <silent> <Leader><space> :CtrlP()<CR>
 " noremap <C-R> :CtrlP()<CR>
 " noremap <leader>b<space> :CtrlPBuffer<cr>
-" let g:ctrlp_custom_ignore = '\v[\/]dist$'
-" let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '\v[\/]dist$'
+let g:ctrlp_show_hidden = 1
 
 "============= peaksea ============="
-if (&t_Co == 256)
-  colorscheme peaksea
-endif
+" if (&t_Co == 256)
+"   colorscheme peaksea
+" endif
 
 "=============== lightline ==========="
 let g:lightline = {'active':{'left':[['mode', 'paste'], ['readonly', 'relativepath', 'modified']]}}
